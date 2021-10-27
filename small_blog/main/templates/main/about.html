@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>About Me</h1>
+        <h4>Hi! Let's get acquainted!</h4>
+        <p>My name is <b>Svetlana</b> and I'm a junior Python programmer. However, I'm a quick learner and will soon become a first-class specialist. Someday I'll look back on this first attempt to work with Django with much fondness, but for now I suggest you see what I have already learnt and go through the pages of this blog. If in the end you are interested in cooperation with me, you can call me or write in messengers by phone <b>+7(951)954-76-03</b> or by e-mail <b>shakurovas@bk.ru</b></p>
+        <p>Thank you for visiting my website!</p>
+        <a href="{% url 'news_home' %}"><button class="btn btn-danger">Read the IT-news!</button></a>
+    </div>
+{% endblock %}
